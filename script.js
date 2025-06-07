@@ -33,7 +33,7 @@ const sekolahData = [
   }).addTo(map);
   
   // === Tambahkan GeoJSON Batas Administrasi ===
-  fetch('../asset/Adm_Cianjur.geojson')
+  fetch('asset/Adm_Cianjur.geojson')
     .then(response => response.json())
     .then(data => {
       const batasLayer = L.geoJSON(data, {

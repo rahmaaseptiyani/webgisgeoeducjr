@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeoEdu Cianjur</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="brand-container">
+      <img src="asset/logocianjur.png" alt="Logo WebGIS" class="logo">
+      <h1>GeoEdu Cianjur</h1>
+    </div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#map">Map</a>
+      <a href="#data">Data</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+ <!--Hero Section-->
+<div id="hero-section" class="hero-section">
+  <div class="hero-content">
+      <h1>Welcome to GeoEdu Cianjur 🏫</h1>
+      <p>Visualisasi Peta Interaktif untuk melihat sebaran SMA Negeri di Kabupaten Cianjur</p>
+  </div>
+  </div>
+
+  <!--Map Section-->
+  <section class="map-section">
+    <h2 class="section-title animate-fade-in">Peta Interaktif untuk Sebaran SMA Negeri 🗺️</h2>
+    <div id="map"></div>
+  </section>
+
+  <!--Data Section-->
+  <section id="data" class="data-section">
+  <h3>📈Data dan Statistik</h3>
+  <div>
+    <label for="filter">Filter Kecamatan:</label>
+    <select id="filter">
+      <option value="all">Semua Kecamatan</option>
+      <option value="Cugenang">Cugenang</option>
+      <option value="Karangtengah">Karangtengah</option>
+      <option value="Cianjur">Cianjur</option>
+      <option value="Cipanas">Cipanas</option>
+      <option value="Pacet">Pacet</option>
+      <option value="Sukaresmi">Sukaresmi</option>
+      <option value="Cilaku">Cilaku</option>
+      <option value="Gekbrong">Gekbrong</option>
+      <option value="Cibeber">Cibeber</option>
+      <option value="Mande">Mande</option>
+      <option value="Sukanagara">Sukanagara</option>
+      <option value="Cibinong">Cibinong</option>
+    </select>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <strong>Jumlah SMA Negeri</strong>
+      <p id="total">0 sekolah</p>
+    </div>
+    <div class="stat-card">
+      <strong>Kecamatan Terbanyak</strong>
+      <p id="topDistrict">-</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Author Section -->
+<section id="about" class="author-section">
+  <h2>Tentang Pembuat</h2>
+  <img src="asset/cantik.jpeg" alt="Foto Siti Rahma Septyani" class="author-img" />
+  <h3>Siti Rahma Septyani</h3>
+  <p>
+    Siti Rahma Septyani, seorang mahasiswa yang sedang menempuh pendidikan S1 prodi Sains Informasi Geografi di Universitas Pendidikan Indonesia. Saat ini memiliki minat pada SIG, penginderaan jauh, WebGIS, dan SIG untuk mitigasi bencana dan termotivasi untuk terus belajar dan berkembang sebagai analis SIG.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <h3>Hubungi Saya</h3>
+  <p>Email: <a href="mailto:rahmaseptyani4@gmail.com">rahmaseptyani4@gmail.com</a></p>
+  <p>Phone: +6287821785802</p>
+</footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
